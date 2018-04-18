@@ -56,7 +56,9 @@
     </tr>
     <tr>
       <td><code>default_value</code></td>
-      <td>A default value assigned to a tracked conversion.</td>
+      <td>A default value assigned to a tracked conversion.
+      Conversion values must be less than 2,147,483,647.
+      </td>
     </tr>
     <tr>
       <td><code>counting_method</code></td>

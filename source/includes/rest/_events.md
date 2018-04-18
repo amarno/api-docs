@@ -103,7 +103,9 @@ If you need to create or update a collection of events at once, use the Batch AP
     </tr>
     <tr>
       <td><code>properties</code></td>
-      <td>Optional. A Object containing custom event properties. If this event is a conversion, include the value (in cents) in the in the properties with a <code>value</code> key.</td>
+      <td>Optional. A Object containing custom event properties. If this event is a conversion, include the value (in cents) in the in the properties with a <code>value</code> key.
+      Conversion values must be less than 2,147,483,647.
+      </td>
     </tr>
     <tr>
       <td><code>occurred_at</code></td>
