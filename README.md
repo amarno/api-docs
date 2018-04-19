@@ -1,5 +1,16 @@
 # Drip API Documentation
 
+## Deploying
+
+To push the `master` version of the API docs up to the production Drip site, use:
+
+```bash
+script/release
+```
+
+
+## Original README
+
 A [Slate](https://github.com/lord/slate) static site.
 
 Getting Started
