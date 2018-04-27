@@ -432,6 +432,14 @@ If the workflow is not active, the subscriber will not be added to the workflow.
       <td>Optional. A Boolean specifiying whether we should attach a lead score to the subscriber (when lead scoring is enabled). Defaults to <code>true</code>.
         <strong>Note:</strong> This flag used to be called <code>potential_lead</code>, which we will continue to accept for backwards compatibility.</td>
     </tr>
+    <tr>
+      <td><code>eu_consent</code></td>
+      <td>Optional. A String specifying whether the subscriber <code>granted</code> or <code>denied</code> GDPR consent.</td>
+    </tr>
+    <tr>
+      <td><code>eu_consent_message</code></td>
+      <td>Optional. A String containing the message the subscriber granted or denied their consent to.</td>
+    </tr>
   </tbody>
 </table>
 

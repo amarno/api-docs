@@ -7,6 +7,7 @@
   "id": "z1togz2hcjrkpp5treip",
   "status": "active",
   "email": "john@acme.com",
+  "eu_consent": "granted",
   "time_zone": "America/Los_Angeles",
   "utc_offset": -440,
   "visitor_uuid": "sa8f7sdf78sdsdahf788d7asf8sd",
@@ -62,6 +63,10 @@
     <tr>
       <td><code>email</code></td>
       <td>The subscriber's email address.</td>
+    </tr>
+    <tr>
+      <td><code>eu_consent</code></td>
+      <td>A string describing whether the subscriber GDPR consent is <code>granted</code>, <code>denied</code>, or <code>unknown</code>.</td>
     </tr>
     <tr>
       <td><code>time_zone</code></td>
@@ -276,6 +281,14 @@ If you need to create or update a collection of subscribers at once, use our [ba
     <tr>
       <td><code>base_lead_score</code></td>
       <td>Optional. An Integer specifying the starting value for lead score calculation for this subscriber. Defaults to <code>30</code>.</td>
+    </tr>
+    <tr>
+      <td><code>eu_consent</code></td>
+      <td>Optional. A String specifying whether the subscriber <code>granted</code> or <code>denied</code> GDPR consent.</td>
+    </tr>
+    <tr>
+      <td><code>eu_consent_message</code></td>
+      <td>Optional. A String containing the message the subscriber granted or denied their consent to.</td>
     </tr>
   </tbody>
 </table>
