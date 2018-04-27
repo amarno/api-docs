@@ -434,11 +434,11 @@ If the workflow is not active, the subscriber will not be added to the workflow.
     </tr>
     <tr>
       <td><code>eu_consent</code></td>
-      <td>Optional. An String specifying whether the subscriber <code>granted</code> or <code>denied</code> GDPR consent.</td>
+      <td>Optional. A String specifying whether the subscriber <code>granted</code> or <code>denied</code> GDPR consent.</td>
     </tr>
     <tr>
       <td><code>eu_consent_message</code></td>
-      <td>Optional. A String containing the message that was displayed to the subscriber when they granted or denied consent.</td>
+      <td>Optional. A String containing the message the subscriber granted or denied their consent to.</td>
     </tr>
   </tbody>
 </table>
