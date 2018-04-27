@@ -650,6 +650,14 @@ client.subscribeToCampaign(campaignId, payload)
       <td><code>base_lead_score</code></td>
       <td>Optional. An Integer specifying the starting value for lead score calculation for this subscriber. Defaults to <code>30</code>.</td>
     </tr>
+    <tr>
+      <td><code>eu_consent</code></td>
+      <td>Optional. An String specifying whether the subscriber <code>granted</code> or <code>denied</code> GDPR consent.</td>
+    </tr>
+    <tr>
+      <td><code>eu_consent_message</code></td>
+      <td>Optional. A String containing the message that was displayed to the subscriber when they granted or denied consent.</td>
+    </tr>
   </tbody>
 </table>
 
