@@ -367,7 +367,7 @@ client.listSubscribers(options)
   <tbody>
     <tr>
       <td><code>status</code></td>
-      <td>Optional. Filter by one of the following statuses: <code>all</code>, <code>active</code>, <code>unsubscribed</code>, <code>active_or_unsubscribed</code>, <code>undeliverable</code>, or <code>removed</code>. Defaults to <code>active</code>.</td>
+      <td>Optional. Filter by one of the following statuses: <code>all</code>, <code>active</code>, <code>unsubscribed</code>, <code>active_or_unsubscribed</code> or <code>undeliverable</code>. Defaults to <code>active</code>.</td>
     </tr>
 
     <tr>
