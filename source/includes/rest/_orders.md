@@ -365,6 +365,88 @@
 
 > To create or update an order for a subscriber:
 
+```ruby
+require 'drip'
+
+client = Drip::Client.new do |c|
+  c.api_key = "YOUR API KEY"
+  c.account_id = "YOUR_ACCOUNT_ID"
+end
+
+order = {
+  provider: "shopify",
+  upstream_id: "abcdef",
+  identifier: "Order_123456",
+  amount: 4900,
+  tax: 100,
+  fees: 0,
+  discount: 0,
+  permalink: "http://myorders.com/orders/123456",
+  currency_code: "USD",
+  properties: {
+    size: "medium",
+    color: "red"
+  },
+  occurred_at: "2013-06-21T10:31:58Z",
+  closed_at: "2013-06-21T10:35:58Z",
+  financial_state: "paid",
+  fulfillment_state: "fulfilled",
+  billing_address: {
+    name: "Bill Billington",
+    first_name: "Bill",
+    last_name: "Billington",
+    company: "Bills R US",
+    address_1: "123 Bill St.",
+    address_2: "Apt. B",
+    city: "Billtown",
+    state: "CA",
+    zip: "01234",
+    country: "United States",
+    phone: "555-555-5555",
+    email: "bill@bills.com"
+  },
+  shipping_address: {
+    name: "Ship Shippington",
+    first_name: "Ship",
+    last_name: "Shipington",
+    company: "Shipping 4 Less",
+    address_1: "123 Ship St.",
+    address_2: "null",
+    city: "Shipville",
+    state: "CA",
+    zip: "01234",
+    country: "United States",
+    phone: "555-555-5555",
+    email: "ship@shipping.com"
+  },
+  items: [{
+    id: "8888888",
+    product_id: "765432",
+    sku: "4444",
+    amount: 4900,
+    name: "Canoe",
+    quantity: 1,
+    upstream_id: "hijkl",
+    upstream_product_id: "opqrs",
+    upstream_product_variant_id: "zyxwv",
+    price: 4900,
+    tax: 100,
+    fees: 0,
+    discount: 100,
+    taxable: true,
+    properties: {
+      color: "black"
+    }
+  }]
+}
+
+response = client.create_or_update_order("john@acme.com", order)
+
+if response.success?
+  # ...
+end
+```
+
 ```shell
 curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/orders" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
@@ -765,6 +847,30 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/refunds" \
       }]
   }
   EOF
+```
+
+```ruby
+require 'drip'
+
+client = Drip::Client.new do |c|
+  c.api_key = "YOUR API KEY"
+  c.account_id = "YOUR_ACCOUNT_ID"
+end
+
+refund = {
+  provider: "shopify",
+  order_upstream_id: "abcdef",
+  upstream_id: "tuvwx",
+  amount: 2000,
+  note: "Incorrect size",
+  processed_at: "2013-06-22T10:41:11Z"
+}
+
+response = client.create_or_update_refund(refund)
+
+if response.success?
+  # ...
+end
 ```
 
 
