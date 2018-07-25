@@ -24,8 +24,6 @@
   "email_count": 10,
   "active_subscriber_count": 320,
   "unsubscribed_subscriber_count": 5,
-  "email_open_rate": 0.15531,
-  "email_click_rate": 0.68232,
   "created_at": "2013-06-21T10:31:58Z",
   "href": "https://api.getdrip.com/v2/9999999/campaigns/123456",
   "links": {
@@ -136,14 +134,6 @@
     <tr>
       <td><code>unsubscribed_subscriber_count</code></td>
       <td>Returns a count of all subscribers who unsubscribed from the campaign via a delivered email.</td>
-    </tr>
-    <tr>
-      <td><code>email_open_rate</code></td>
-      <td>The campaign's all-time open rate.</td>
-    </tr>
-    <tr>
-      <td><code>email_click_rate</code></td>
-      <td>The campaign's all-time click-through rate.</td>
     </tr>
     <tr>
       <td><code>created_at</code></td>
