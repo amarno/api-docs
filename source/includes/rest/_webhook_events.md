@@ -13,7 +13,7 @@ settings page, enter your URL, and hit "Create Webhook". That's it!
 
 Because of the potential for high volume, we will not send notifications for
 `subscriber.received_email` events by default. To receive a post every time a subscriber
-receives and email, enable these events using the checkbox on the webhook's settings.
+receives an email, enable these events using the checkbox on the webhook's settings.
 
 Please note that some webhook endpoints may implement rate limiting, especially for entry-level or free accounts.
 We will attempt to re-send webhooks for up to 3 days if they are rate limited.
