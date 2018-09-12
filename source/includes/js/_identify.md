@@ -82,7 +82,6 @@ The following are treated as special properties. All other data passed in will b
   success: true,
   visitor_uuid: "f627ee608adb01315d1022000ab2058a",
   anonymous: false,
-  lead_score: 35
 }
 ```
 
@@ -107,10 +106,6 @@ The identify request will pass a response object to the <code>success</code> or 
     <tr>
       <td><code>anonymous</code></td>
       <td>Boolean. False if the visitor is associated with a subscriber.</td>
-    </tr>
-    <tr>
-      <td><code>lead_score</code></td>
-      <td>Included if the subscriber is a prospect.</td>
     </tr>
     <tr>
       <td><code>error</code></td>
