@@ -82,10 +82,6 @@ The following are treated as special properties. All other data passed in will b
   success: true,
   visitor_uuid: "f627ee608adb01315d1022000ab2058a",
   anonymous: false,
-  email: "john@acme.com",
-  custom_fields: { "name": "John" },
-  tags: ["Customer"],
-  lead_score: 35
 }
 ```
 
@@ -110,22 +106,6 @@ The identify request will pass a response object to the <code>success</code> or 
     <tr>
       <td><code>anonymous</code></td>
       <td>Boolean. False if the visitor is associated with a subscriber.</td>
-    </tr>
-    <tr>
-      <td><code>email</code></td>
-      <td>Included only if the visitor is not anonymous. The associated subscriber's email address.</td>
-    </tr>
-    <tr>
-      <td><code>custom_fields</code></td>
-      <td>An Object containing custom fields that are marked as public in your settings (see Subscribers > Custom Fields). Custom fields containing sensitive information should not be marked as public, for security purposes.</td>
-    </tr>
-    <tr>
-      <td><code>tags</code></td>
-      <td>An array of the subscriber's tags.</td>
-    </tr>
-    <tr>
-      <td><code>lead_score</code></td>
-      <td>Included if the subscriber is a prospect.</td>
     </tr>
     <tr>
       <td><code>error</code></td>
