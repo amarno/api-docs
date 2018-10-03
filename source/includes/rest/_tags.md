@@ -85,6 +85,7 @@ None.
 
 ```shell
 curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/tags" \
+  -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY: \
   -d @- << EOF
@@ -172,6 +173,7 @@ client.tagSubscriber(payload)
 
 ```shell
 curl -X DELETE "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/subscribers/ID_OR_EMAIL/tags/TAG" \
+  -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY:
 ```

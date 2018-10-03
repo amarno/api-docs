@@ -450,6 +450,7 @@ end
 ```shell
 curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/orders" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
+  -H "Content-Type: application/json" \
   -u YOUR_API_KEY: \
   -d @- << EOF
   {
@@ -833,6 +834,7 @@ To update an existing order, include the <code>provider</code> and <code>upstrea
 
 ```shell
 curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/refunds" \
+  -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY: \
   -d @- << EOF
