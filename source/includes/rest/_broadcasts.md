@@ -113,6 +113,7 @@
 
 ```shell
 curl "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/broadcasts" \
+  -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY:
 ```
@@ -201,6 +202,7 @@ client.listBroadcasts(options)
 
 ```shell
 curl "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/broadcasts/BROADCAST_ID" \
+  -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY:
 ```
