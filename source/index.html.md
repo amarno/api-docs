@@ -38,6 +38,11 @@ includes_js_api:
   - js/campaign_subscriptions
   - js/forms
 
+includes_cdc:
+  - cdc/custom_dynamic_content
+  - cdc/api_requirements
+  - cdc/example
+
 search: true
 ---
 
