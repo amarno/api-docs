@@ -33,6 +33,16 @@ under the License.
   end
 %>
 
+<%
+  if current_page.data.includes_cdc
+    page_content += partial("includes/_cdc_section")
+
+    current_page.data.includes_cdc.each do |include|
+      page_content += partial("includes/#{include}")
+    end
+  end
+%>
+
 <!doctype html>
 <html>
   <head>
@@ -94,6 +104,8 @@ under the License.
               <p class="toc-section">REST API</p>
             <% elsif h1[:id] == "js-section" %>
               <p class="toc-section">JS API</p>
+            <% elsif h1[:id] == "cdc-section" %>
+              <p class="toc-section">Custom Dynamic Content</p>
             <% else %>
               <a href="#<%= h1[:id] %>" class="toc-h1 toc-link" data-title="<%= h1[:content] %>"><%= h1[:content] %></a>
               <% if h1[:children].length > 0 %>
