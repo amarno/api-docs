@@ -1,5 +1,7 @@
 # Background
 
+_To request this feature be enabled on your account, contact our [support team](mailto:support@drip.com)._
+
 Custom Dynamic Content allows you to pull data from your system into Drip emails. Your data is then available
 via Liquid, allowing you to build super-rich personalized emails augmented with fresh data from your own systems.
 
