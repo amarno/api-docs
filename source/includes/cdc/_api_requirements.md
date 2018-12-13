@@ -21,7 +21,7 @@
     - This is useful for authentication, such as providing `?key=12345`
 - Parameters without a value will be sent through as a key with no value
     - e.g. A subscriber with a custom field assigned for country, but not for zip would have a URL query string of `?subscriber[country]=US&subscriber[zip]`
-- A parameter value should not be unique per subscriber; this allows for greater cacheability of responses, as to optimize your delivery throughput
+- A parameter value should not be unique per subscriber (e.g. we won't send `email`); this allows for greater cacheability of responses, as to optimize your delivery throughput
 
 ## Response
 
@@ -31,6 +31,7 @@
 - A `3xx` response will be followed as redirects per the HTTP specification
 - Response codes in the `4xx` and `5xx` ranges will be considered an error
 - No other response codes are supported
+- The returned document cannot exceed 350 KB in size
 
 When a `2xx` response is received, Drip will use whatever data is given, and will assume `null` values for any data not given. For example, response of `{}` would still be accessible in Liquid and would respond to any attribute with `nil`.
 

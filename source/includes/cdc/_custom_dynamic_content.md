@@ -12,9 +12,9 @@ Example use cases:
 
 ## How it works
 
-1. You provide an API endpoint
+1. You provide a custom API endpoint
 1. You choose the Liquid shortcode
 1. When we render an email, we'll `GET` a JSON document from your endpoint
-1. You'll then have access to that document in Liquid via your shortcode
+1. You'll then have access to that document in Liquid via your `my.` shortcode
 
 See [Drip Weather](https://github.com/DripEmail/drip-personalized-weather) as an example endpoint.
