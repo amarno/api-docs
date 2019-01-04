@@ -42,6 +42,9 @@
 }
 ```
 
+On January 7, 2019 we renamed Subscribers to People to better represent who you’re talking to. Right now this is a small wording change but represents something bigger in the way we all think about our customers. To keep things simple nothing in the API is changing at the moment. There is no need to update existing integrations, for new ones continue to reference the developer docs as outlined here.
+
+
 **Properties**
 
 <table>
