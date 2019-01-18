@@ -239,11 +239,15 @@ If you need to create or update a collection of subscribers at once, use our [ba
   <tbody>
     <tr>
       <td><code>email</code></td>
-      <td>Optional. The subscriber's email address. Either <code>email</code> or <code>id</code> must be included.</td>
+      <td>Optional. The subscriber's email address. Either <code>email</code> or <code>id</code> or <code>visitor_uuid</code> must be included.</td>
     </tr>
     <tr>
       <td><code>id</code></td>
-      <td>Optional. The subscriber's Drip <code>id</code>. Either <code>email</code> or <code>id</code> must be included.</td>
+      <td>Optional. The subscriber's Drip <code>id</code>. Either <code>email</code> or <code>id</code> or <code>visitor_uuid</code> must be included.</td>
+    </tr>
+    <tr>
+      <td><code>visitor_uuid</code></td>
+      <td>Optional. The <code>uuid</code> for a subscriber's visitor record. Either <code>email</code> or <code>id</code> or <code>visitor_uuid</code> must be included.</td>
     </tr>
     <tr>
       <td><code>new_email</code></td>
@@ -406,7 +410,7 @@ client.listSubscribers(options)
 > To fetch a subscriber:
 
 ```shell
-curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/subscribers/ID_OR_EMAIL" \
+curl "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/subscribers/ID_OR_EMAIL_OR_VISITOR_UUID" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY:
 ```
@@ -455,7 +459,7 @@ client.fetchSubscriber(idOrEmail)
 
 ### HTTP Endpoint
 
-`GET /:account_id/subscribers/:id_or_email`
+`GET /:account_id/subscribers/:id_or_email_or_visitor_uuid`
 
 ### Arguments
 
