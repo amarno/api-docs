@@ -208,7 +208,7 @@ client.listForms()
 
 ### HTTP Endpoint
 
-`GET /:account_id/forms`
+`GET /v2/:account_id/forms`
 
 ### Arguments
 
@@ -267,7 +267,7 @@ client.fetchForm(formId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/forms/:form_id`
+`GET /v2/:account_id/forms/:form_id`
 
 ### Arguments
 

@@ -1,4 +1,4 @@
-# Background
+<h1 id="cdc_overview">Overview</h1>
 
 _To request this feature be enabled on your account, contact our [support team](mailto:support@drip.com)._
 

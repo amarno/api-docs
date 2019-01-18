@@ -66,7 +66,7 @@ client.listAllCustomFields()
 
 ### HTTP Endpoint
 
-`GET /:account_id/custom_field_identifiers`
+`GET /v2/:account_id/custom_field_identifiers`
 
 ### Arguments
 

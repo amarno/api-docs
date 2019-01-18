@@ -215,7 +215,7 @@ client.listCampaigns(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/campaigns`
+`GET /v2/:account_id/campaigns`
 
 ### Arguments
 
@@ -299,7 +299,7 @@ client.fetchCampaign(campaignId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/campaigns/:campaign_id`
+`GET /v2/:account_id/campaigns/:campaign_id`
 
 ### Arguments
 
@@ -350,7 +350,7 @@ client.activateCampaign(campaignId)
 
 ### HTTP Endpoint
 
-`POST /:account_id/campaigns/:campaign_id/activate`
+`POST /v2/:account_id/campaigns/:campaign_id/activate`
 
 ### Arguments
 
@@ -401,7 +401,7 @@ client.pauseCampaign(campaignId)
 
 ### HTTP Endpoint
 
-`POST /:account_id/campaigns/:campaign_id/pause`
+`POST /v2/:account_id/campaigns/:campaign_id/pause`
 
 ### Arguments
 
@@ -468,7 +468,7 @@ client.listAllSubscribesToCampaign(campaignId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/campaigns/:campaign_id/subscribers`
+`GET /v2/:account_id/campaigns/:campaign_id/subscribers`
 
 ### Arguments
 
@@ -588,7 +588,7 @@ client.subscribeToCampaign(campaignId, payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/campaigns/:campaign_id/subscribers`
+`POST /v2/:account_id/campaigns/:campaign_id/subscribers`
 
 ### Arguments
 
@@ -728,7 +728,7 @@ client.subscriberCampaignSubscriptions(subscriberId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/subscribers/:subscriber_id/campaign_subscriptions`
+`GET /v2/:account_id/subscribers/:subscriber_id/campaign_subscriptions`
 
 ### Arguments
 

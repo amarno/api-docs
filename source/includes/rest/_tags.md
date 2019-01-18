@@ -73,7 +73,7 @@ client.listAllTags()
 
 ### HTTP Endpoint
 
-`GET /:account_id/tags`
+`GET /v2/:account_id/tags`
 
 ### Arguments
 
@@ -144,7 +144,7 @@ client.tagSubscriber(payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/tags`
+`POST /v2/:account_id/tags`
 
 ### Arguments
 

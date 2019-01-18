@@ -223,7 +223,7 @@ client.createUpdateSubscriber(payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/subscribers`
+`POST /v2/:account_id/subscribers`
 
 If you need to create or update a collection of subscribers at once, use our [batch API](/) instead.
 
@@ -361,7 +361,7 @@ client.listSubscribers(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/subscribers`
+`GET /v2/:account_id/subscribers`
 
 ### Arguments
 
@@ -459,7 +459,7 @@ client.fetchSubscriber(idOrEmail)
 
 ### HTTP Endpoint
 
-`GET /:account_id/subscribers/:id_or_email_or_visitor_uuid`
+`GET /v2/:account_id/subscribers/:id_or_email_or_visitor_uuid`
 
 ### Arguments
 
@@ -546,7 +546,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/subscribers/ID_OR_EMAIL
 
 ### HTTP Endpoint
 
-`POST /:account_id/subscribers/:id_or_email/remove`
+`POST /v2/:account_id/subscribers/:id_or_email/remove`
 
 This endpoint was previously labeled `unsubscribe`.
 
@@ -620,7 +620,7 @@ client.unsubscribeFromAllMailings(idOrEmail)
 
 ### HTTP Endpoint
 
-`POST /:account_id/subscribers/:id_or_email/unsubscribe_all`
+`POST /v2/:account_id/subscribers/:id_or_email/unsubscribe_all`
 
 ### Arguments
 

@@ -133,7 +133,7 @@ client.listConversions(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/goals`
+`GET /v2/:account_id/goals`
 
 ### Arguments
 
@@ -213,7 +213,7 @@ client.fetchConversion(conversionId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/goals/:conversion_id`
+`GET /v2/:account_id/goals/:conversion_id`
 
 ### Arguments
 

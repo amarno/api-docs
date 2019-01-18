@@ -142,7 +142,7 @@ client.listAccounts()
 
 ### HTTP Endpoint
 
-`GET /accounts`
+`GET /v2/accounts`
 
 ### Arguments
 
@@ -200,7 +200,7 @@ client.fetchAccount(accountId)
 
 ### HTTP Endpoint
 
-`GET /accounts/:account_id`
+`GET /v2/accounts/:account_id`
 
 ### Arguments
 

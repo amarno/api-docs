@@ -126,7 +126,7 @@ client.listWebhooks()
 
 ### HTTP Endpoint
 
-`GET /:account_id/webhooks`
+`GET /v2/:account_id/webhooks`
 
 ### Arguments
 
@@ -185,7 +185,7 @@ client.fetchWebhook(webhookId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/webhooks/:webhook_id`
+`GET /v2/:account_id/webhooks/:webhook_id`
 
 ### Arguments
 
@@ -282,7 +282,7 @@ client.createWebhook(payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/webhooks`
+`POST /v2/:account_id/webhooks`
 
 ### Arguments
 
