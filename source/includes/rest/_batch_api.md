@@ -100,7 +100,7 @@ request and the time your data appears in the user interface.
 
 ### HTTP Endpoint
 
-`POST /:account_id/subscribers/batches`
+`POST /v2/:account_id/subscribers/batches`
 
 ### Arguments
 
@@ -200,7 +200,7 @@ client.unsubscribeBatchSubscribers(payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/unsubscribes/batches`
+`POST /v2/:account_id/unsubscribes/batches`
 
 ### Arguments
 
@@ -311,7 +311,7 @@ request and the time your data appears in the user interface.
 
 ### HTTP Endpoint
 
-`POST /:account_id/events/batches`
+`POST /v2/:account_id/events/batches`
 
 ### Arguments
 
@@ -498,7 +498,7 @@ request and the time your data appears in the user interface.
 
 ### HTTP Endpoint
 
-`POST /:account_id/orders/batches`
+`POST /v2/:account_id/orders/batches`
 
 ### Arguments
 

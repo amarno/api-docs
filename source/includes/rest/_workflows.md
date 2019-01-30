@@ -123,7 +123,7 @@ client.listAllWorkflows(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/workflows`
+`GET /v2/:account_id/workflows`
 
 ### Arguments
 
@@ -203,7 +203,7 @@ client.fetchWorkflow(workflowId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/workflows/:workflow_id`
+`GET /v2/:account_id/workflows/:workflow_id`
 
 ### Arguments
 
@@ -254,7 +254,7 @@ client.activateWorkflow(workflowId)
 
 ### HTTP Endpoint
 
-`POST /:account_id/workflows/:workflow_id/activate`
+`POST /v2/:account_id/workflows/:workflow_id/activate`
 
 ### Arguments
 
@@ -305,7 +305,7 @@ client.pauseWorkflow(workflowId)
 
 ### HTTP Endpoint
 
-`POST /:account_id/workflows/:workflow_id/pause`
+`POST /v2/:account_id/workflows/:workflow_id/pause`
 
 ### Arguments
 
@@ -392,7 +392,7 @@ If the workflow is not active, the subscriber will not be added to the workflow.
 
 ### HTTP Endpoint
 
-`POST /:account_id/workflows/:workflow_id/subscribers`
+`POST /v2/:account_id/workflows/:workflow_id/subscribers`
 
 ### Arguments
 
@@ -567,7 +567,7 @@ client.listTriggers(workflowId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/workflows/:workflow_id/triggers`
+`GET /v2/:account_id/workflows/:workflow_id/triggers`
 
 ### Arguments
 
@@ -667,7 +667,7 @@ client.createTrigger(workflowId, payload)
 
 ### HTTP Endpoint
 
-`POST /:account_id/workflows/:workflow_id/triggers`
+`POST /v2/:account_id/workflows/:workflow_id/triggers`
 
 ### Arguments
 

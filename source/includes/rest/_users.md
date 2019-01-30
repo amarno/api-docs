@@ -48,7 +48,7 @@ client.fetchUser()
 
 ### HTTP Endpoint
 
-`GET /user`
+`GET /v2/user`
 
 ### Arguments
 

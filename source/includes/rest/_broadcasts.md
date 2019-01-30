@@ -169,7 +169,7 @@ client.listBroadcasts(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/broadcasts`
+`GET /v2/:account_id/broadcasts`
 
 ### Arguments
 
@@ -250,7 +250,7 @@ client.fetchBroadcast(broadcastId)
 
 ### HTTP Endpoint
 
-`GET /:account_id/broadcasts/:broadcast_id`
+`GET /v2/:account_id/broadcasts/:broadcast_id`
 
 ### Arguments
 

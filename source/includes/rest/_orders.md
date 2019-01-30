@@ -541,7 +541,7 @@ To update an existing order, include the <code>provider</code> and <code>upstrea
 
 ### HTTP Endpoint
 
-`POST /:account_id/orders`
+`POST /v2/:account_id/orders`
 
 ### Arguments
 
@@ -889,7 +889,7 @@ To update an existing refund, include the <code>upstream_id</code> for that refu
 
 ### HTTP Endpoint
 
-`POST /:account_id/refunds`
+`POST /v2/:account_id/refunds`
 
 ### Arguments
 

@@ -73,7 +73,7 @@ If you need to create or update a collection of events at once, use the Batch AP
 
 ### HTTP Endpoint
 
-`POST /:account_id/events`
+`POST /v2/:account_id/events`
 
 ### Arguments
 
@@ -174,7 +174,7 @@ client.listEventActions(options)
 
 ### HTTP Endpoint
 
-`GET /:account_id/event_actions`
+`GET /v2/:account_id/event_actions`
 
 ### Arguments
 
