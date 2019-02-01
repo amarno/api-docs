@@ -41,6 +41,7 @@ includes_js_api:
 includes_cdc:
   - cdc/custom_dynamic_content
   - cdc/api_requirements
+  - cdc/preview
   - cdc/example
 
 includes_shopper_activity:
