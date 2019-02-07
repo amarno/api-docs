@@ -9,7 +9,7 @@ Note that Cart Activity will show up on a person's activity timeline as either a
 > To record a cart event:
 
 ```shell
-curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/cart" \
+curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" \
   -H "Content-Type: application/json" \
   -H 'User-Agent: Your App Name (www.yourapp.com)' \
   -u YOUR_API_KEY: \
@@ -29,19 +29,19 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/cart" \
     "items": [
       {
         "product_id": "B01J4SWO1G",
-        "product_variant_id": "B01J4SWO1G-XS-NAVY",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT",
         "sku": "XHB-1234",
-        "name": "Disney Mens Donald Duck T-Shirt",
-        "brand": "CK",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
         "categories": [
-          "T-Shirts"
+          "Accessories"
         ],
         "price": 1116,
         "quantity": 2,
         "discount": 534,
         "total": 1699,
         "product_url": "https://mysuperstore.com/dp/B01J4SWO1G",
-        "image_url": "https://mysuperstore.com/images/I/618RNdkg4lL.jpg",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png",
         "product_tag": "Best Seller"
       }
     ]
@@ -186,3 +186,5 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/cart" \
 The API will also allow custom attributes to be passed in. These will be exposed within Drip just like [event properties](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties).
 
 For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to event (top level object) or items. Custom attribute values must be strings.
+
+For more information, see our Knowledge Base [here](https://help.drip.com/hc/en-us/articles/360022922031).
