@@ -2,7 +2,7 @@
 
 Passing in all required fields for Cart Activity will enable Cart Abandonment Dynamic Content in your Drip account. Leverage that content in our Visual Email Builder to send Cart Abandonment emails containing item details.
 
-Note that Cart Activity will show up on a person's activity timeline as either a "Created a cart" or "Updated a cart" event.
+Note that Cart Activity will show up on a person's activity timeline as either a "Created a cart" or "Updated a cart" event. For more information, see our Knowledge Base [here](https://help.drip.com/hc/en-us/articles/360022922031).
 
 ## Create or update a cart
 
@@ -16,7 +16,6 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
   -d @- << EOF
   {
     "provider": "magento",
-    "person_id": "suisqegbkv9zcfe8zsox",
     "email": "user@gmail.com",
     "action": "created",
     "cart_id": "456445746",
@@ -36,7 +35,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
         "categories": [
           "Accessories"
         ],
-        "price": 1116,
+        "price": 11.16,
         "quantity": 2,
         "discount": 534,
         "total": 1699,
@@ -77,11 +76,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
     </tr>
     <tr>
       <td><code>person_id</code></td>
-      <td>Optional. The unique identifier of a person at Drip. Either <code>person_id</code> or <code>email</code> must be included.</td>
+      <td>Optional. The unique identifier of a person at Drip. Either <code>person_id</code> or <code>email</code> must be included. If both are included, <code>email</code> is ignored.</td>
     </tr>
     <tr>
       <td><code>email</code></td>
-      <td>Optional. The person's email address. Either <code>person_id</code> or <code>email</code> must be included.</td>
+      <td>Optional. The person's email address. Either <code>person_id</code> or <code>email</code> must be included. If both are included, <code>email</code> is ignored.</td>
     </tr>
     <tr>
       <td><code>action</code></td>
@@ -186,5 +185,3 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
 The API will also allow custom attributes to be passed in. These will be exposed within Drip just like [event properties](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties).
 
 For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to event (top level object) or items. Custom attribute values must be strings.
-
-For more information, see our Knowledge Base [here](https://help.drip.com/hc/en-us/articles/360022922031).
