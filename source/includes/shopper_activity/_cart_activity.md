@@ -21,8 +21,8 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
     "cart_id": "456445746",
     "occurred_at": "2019-01-17T20:50:00Z",
     "cart_public_id": "#5",
-    "grand_total": 1699,
-    "total_discounts": 534,
+    "grand_total": 16.99,
+    "total_discounts": 5.34,
     "currency": "USD",
     "cart_url": "https://mysuperstore.com/cart/456445746",
     "items": [
@@ -37,8 +37,8 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
         ],
         "price": 11.16,
         "quantity": 2,
-        "discount": 534,
-        "total": 1699,
+        "discount": 5.34,
+        "total": 16.99,
         "product_url": "https://mysuperstore.com/dp/B01J4SWO1G",
         "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png",
         "product_tag": "Best Seller"
@@ -100,11 +100,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
     </tr>
     <tr>
       <td><code>grand_total</code></td>
-      <td>Optional. The total amount of the cart in cents (e.g. if the order was $16.99, set the amount to 1699). This should include any applicable discounts. Defaults to 0.</td>
+      <td>Optional. The total amount of the cart. This should include any applicable discounts. Defaults to 0.</td>
     </tr>
     <tr>
       <td><code>total_discounts</code></td>
-      <td>Optional. The discount on the entire order in cents (e.g. if the discount was $5.34, set the discount to 534). Defaults to 0.</td>
+      <td>Optional. The discount on the entire order. Defaults to 0.</td>
     </tr>
     <tr>
       <td><code>currency</code></td>
@@ -153,7 +153,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
             </tr>
             <tr>
               <td><code>price</code></td>
-              <td>Required. The price of a single product (in cents).</td>
+              <td>Required. The price of a single product.</td>
             </tr>
             <tr>
               <td><code>quantity</code></td>
@@ -161,11 +161,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
             </tr>
             <tr>
               <td><code>discount</code></td>
-              <td>Optional. The discount on the item (in cents), taking quantity into account. For example, a $2.66 discount per item would be $5.34 (or 534) if that item was of quantity 2. Defaults to 0.</td>
+              <td>Optional. The discount on the items, taking quantity into account. For example, a $2.66 discount per item would be $5.34 if that item was of quantity 2. Defaults to 0.</td>
             </tr>
             <tr>
               <td><code>total</code></td>
-              <td>Optional. The line item total after quantity and discount (in cents). Defaults to 0.</td>
+              <td>Optional. The line item total after quantity and discount. Defaults to 0.</td>
             </tr>
             <tr>
               <td><code>product_url</code></td>
