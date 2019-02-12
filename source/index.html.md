@@ -56,8 +56,4 @@ search: true
 Welcome to the Drip API! The REST API communicates exclusively in JSON over SSL (HTTPS).
 All endpoint URLs begin with `https://api.getdrip.com/`. Additionally, the REST API requires the use of a client which supports [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication).
 
-Parameters must be serialized in JSON and passed in the request body (not in the query string or form parameters).
-This API is modeled after earlier versions of the [JSON API](http://jsonapi.org/) specification.
-
-It is recommended that you use the media type designation of `application/vnd.api+json`,
-although we will accept a media type designation of `application/json`.
+Parameters must be serialized in JSON and passed in the request body (not in the query string or form parameters). You should use the media type designation of `application/json`.

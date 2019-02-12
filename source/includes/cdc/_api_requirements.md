@@ -11,6 +11,8 @@
 
 - Parameters are scoped to an entity, e.g. `subscriber` or `event`
 - You'll specify which fields of these objects you want sent to your endpoint
+    - Let us know the _exact_ Custom Field names and Event property names you want us to pass to you via the query string
+    - This limitation (not sending all of them) exists because most HTTP servers enforce a URI length limit, and we're passing these fields to you via GET in order for them to be highly cacheable, as to optimize for delivery throughput
 - Scoped parameters are then named the same as the custom field
     - e.g. A subscriber custom field of `first_name` would be passed through as `subscriber[first_name]`
     - e.g. An event field of `product_id` would be passed through as `event[product_id]`
