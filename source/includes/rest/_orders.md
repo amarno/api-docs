@@ -284,7 +284,7 @@
     <tr>
       <td><code>items</code></td>
       <td>
-        An Array of objects containing information about specific order items.
+        Optional. An Array of objects containing information about specific order items.
         <br><br>
         <table>
           <thead>
@@ -296,11 +296,11 @@
           <tbody>
             <tr>
               <td><code>name</code></td>
-              <td>The product name</td>
+              <td>Required. The product name</td>
             </tr>
             <tr>
               <td><code>amount</code></td>
-              <td>The line total (in cents).</td>
+              <td>Required. The line total (in cents).</td>
             </tr>
             <tr>
               <td><code>price</code></td>
