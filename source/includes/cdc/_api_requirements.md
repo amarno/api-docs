@@ -25,7 +25,7 @@
     - e.g. A subscriber with a custom field assigned for country, but not for zip would have a URL query string of `?subscriber[country]=US&subscriber[zip]`
 - A parameter value should not be unique per subscriber (e.g. we won't send `email`); this allows for greater cacheability of responses, as to optimize your delivery throughput
 
-## Response
+<h2 id="cdc-requirements-response">Response</h2>
 
 - Responses must have a `Content-Type` header of `application/json`
 - A response with a `2xx` status will be considered successful
