@@ -89,7 +89,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>action</code></td>
-      <td>Required. The event's action. For Order Activity, this can be either <code>created</code>, <code>updated</code>, <code>paid</code>, <code>fulfilled</code>, <code>refunded</code>, or <code>canceled</code>.
+      <td>Required. The event's action. For Order Activity, this can be either <code>placed</code>, <code>updated</code>, <code>paid</code>, <code>fulfilled</code>, <code>refunded</code>, or <code>canceled</code>. These actions will result in "Placed an order", "Updated an order", "Paid an order", "Fulfilled an order", "Refunded an order", and "Canceled an order" events on the persons timeline, respectively.
     </tr>
     <tr>
       <td><code>order_id</code></td>
