@@ -1,6 +1,6 @@
 # Order Activity
 
-Note that Order Activity will show up on a person's activity timeline as either a "Placed an order" or "Updated an order" event. An Order's <code>order_id</code> is unique. The first order event for a given <code>order_id</code> will result in a "Placed an order" event on the person's timeline in Drip. Subsequent events for that order will result in "Updated an order" events.
+Note that Order Activity will show up on a person's activity timeline as a subscriber event. The event is based on the <code>action</code> sent with the order event. E.g. sending <code>placed</code> will result in a "Placed an order" event on the timeline, and sending <code>updated</code> will result in an "Updated an order" event.
 
 ## Create or update an order
 
@@ -89,7 +89,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>action</code></td>
-      <td>Required. The event's action. For Order Activity, this can be either <code>created</code> or <code>updated</code>.
+      <td>Required. The event's action. For Order Activity, this can be either <code>created</code>, <code>updated</code>, <code>paid</code>, <code>fulfilled</code>, <code>refunded</code>, or <code>canceled</code>.
     </tr>
     <tr>
       <td><code>order_id</code></td>
