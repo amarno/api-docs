@@ -169,11 +169,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
             </tr>
             <tr>
               <td><code>product_url</code></td>
-              <td>Required. A URL to the site containing product details.</td>
+              <td>Optional. A URL to the site containing product details.</td>
             </tr>
             <tr>
               <td><code>image_url</code></td>
-              <td>Required. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
+              <td>Optional. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
             </tr>
           </tbody>
         </table>

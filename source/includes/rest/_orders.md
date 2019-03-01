@@ -1,4 +1,8 @@
-# Orders
+# Orders (Legacy)
+
+We’ve released a new and improved endpoint for Orders functionality! This new endpoint will allow you to trigger automations and segment people based on the items contained in an order. Check it out [here](#order-activity).
+
+Note that the legacy Orders endpoint will continue to function for the time being. We will give current users fair notice before we retire it in the future.
 
 > Orders are represented as follows:
 
