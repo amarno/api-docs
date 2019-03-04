@@ -52,7 +52,32 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
         "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png",
         "product_tag": "Best Seller"
       }
-    ]
+    ],
+    "billing_address": {
+      "name": "Primary Billing",
+      "first_name": "Bill",
+      "last_name": "Billington",
+      "company": "Bills R US",
+      "address_1": "123 Bill St.",
+      "address_2": "Apt. B",
+      "city": "Billtown",
+      "state": "CA",
+      "postal_code": "01234",
+      "country": "United States",
+      "phone": "555-555-5555"
+    },
+    "shipping_address": {
+      "name": "Downtown Office",
+      "first_name": "Ship",
+      "last_name": "Shipington",
+      "company": "Shipping 4 Less",
+      "address_1": "123 Ship St.",
+      "city": "Shipville",
+      "state": "CA",
+      "postal_code": "01234",
+      "country": "United States",
+      "phone": "555-555-5555"
+    }
   }
   EOF
 ```
@@ -207,6 +232,128 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
             <tr>
               <td><code>image_url</code></td>
               <td>Optional. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><code>billing_address</code></td>
+      <td>
+        An object containing billing address information.
+        <br><br>
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>label</code></td>
+              <td>The label describing the billing address.</td>
+            </tr>
+            <tr>
+              <td><code>first_name</code></td>
+              <td>The first name on the billing address.</td>
+            </tr>
+            <tr>
+              <td><code>last_name</code></td>
+              <td>The last name on the billing address.</td>
+            </tr>
+            <tr>
+              <td><code>company</code></td>
+              <td>The company on the billing address.</td>
+            </tr>
+            <tr>
+              <td><code>address_1</code></td>
+              <td>The billing street address.</td>
+            </tr>
+            <tr>
+              <td><code>address_2</code></td>
+              <td>Additional line of the billing street address.</td>
+            </tr>
+            <tr>
+              <td><code>city</code></td>
+              <td>The billing address city.</td>
+            </tr>
+            <tr>
+              <td><code>state</code></td>
+              <td>The billing address state.</td>
+            </tr>
+            <tr>
+              <td><code>postal_code</code></td>
+              <td>The billing address postal code.</td>
+            </tr>
+            <tr>
+              <td><code>country</code></td>
+              <td>The billing address country.</td>
+            </tr>
+            <tr>
+              <td><code>phone</code></td>
+              <td>The phone number associated with the billing address.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td><code>shipping_address</code></td>
+      <td>
+        An object containing shipping address information.
+        <br><br>
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>label</code></td>
+              <td>The label describing the shipping address.</td>
+            </tr>
+            <tr>
+              <td><code>first_name</code></td>
+              <td>The first name on the shipping address.</td>
+            </tr>
+            <tr>
+              <td><code>last_name</code></td>
+              <td>The last name on the shipping address.</td>
+            </tr>
+            <tr>
+              <td><code>company</code></td>
+              <td>The company on the shipping address.</td>
+            </tr>
+            <tr>
+              <td><code>address_1</code></td>
+              <td>The shipping street address.</td>
+            </tr>
+            <tr>
+              <td><code>address_2</code></td>
+              <td>Additional line of the shipping street address.</td>
+            </tr>
+            <tr>
+              <td><code>city</code></td>
+              <td>The shipping address city.</td>
+            </tr>
+            <tr>
+              <td><code>state</code></td>
+              <td>The shipping address state.</td>
+            </tr>
+            <tr>
+              <td><code>postal_code</code></td>
+              <td>The shipping address postal code.</td>
+            </tr>
+            <tr>
+              <td><code>country</code></td>
+              <td>The shipping address country.</td>
+            </tr>
+            <tr>
+              <td><code>phone</code></td>
+              <td>The phone number associated with the shipping address.</td>
             </tr>
           </tbody>
         </table>
