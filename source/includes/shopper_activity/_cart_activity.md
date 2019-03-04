@@ -184,4 +184,4 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
 
 The API will also allow custom attributes to be passed in. These will be exposed within Drip just like [event properties](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties).
 
-For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to event (top level object) or items.
+For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to events or their items.

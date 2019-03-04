@@ -1,6 +1,6 @@
 # Order Activity
 
-Note that Order Activity will show up on a person's activity timeline as an event. The event is based on the <code>action</code> sent with the order event. For example, sending <code>placed</code> will result in a "Placed an order" event, and sending <code>updated</code> will result in an "Updated an order" event.
+Note that Order Activity will show up on a person's activity timeline as an event. The event is based on the <code>action</code> sent with the order event. For example, sending <code>placed</code> will result in a "Placed an order" event and sending <code>updated</code> will result in an "Updated an order" event.
 
 ## Create or update an order
 
@@ -129,7 +129,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>order_url</code></td>
-      <td>Required. A URL that links back to the shopper’s order on your ecommerce platform.</td>
+      <td>Optional. A URL that links back to the shopper’s order on your ecommerce platform.</td>
     </tr>
     <tr>
       <td><code>items</code></td>
@@ -194,15 +194,15 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
             </tr>
             <tr>
               <td><code>total</code></td>
-              <td>Optional. The line item total after quantity, discount, taxes, fees, and shipping. Defaults to 0. Defaults to 0.</td>
+              <td>Optional. The line item total after quantity, discount, taxes, fees, and shipping. Defaults to 0.</td>
             </tr>
             <tr>
               <td><code>product_url</code></td>
-              <td>Required. A URL to the site containing product details.</td>
+              <td>Optional. A URL to the site containing product details.</td>
             </tr>
             <tr>
               <td><code>image_url</code></td>
-              <td>Required. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
+              <td>Optional. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
             </tr>
           </tbody>
         </table>
@@ -213,4 +213,4 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
 
 The API will also allow custom attributes to be passed in. These will be exposed within Drip just like [event properties](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties).
 
-For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to event (top level object) or items.
+For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to events or their items.
