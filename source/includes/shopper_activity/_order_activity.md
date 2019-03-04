@@ -112,6 +112,10 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
       <td>Optional. The total amount of the order. This should include any applicable discounts. Defaults to 0.</td>
     </tr>
     <tr>
+      <td><code>total_discounts</code></td>
+      <td>Optional. The discounts on the entire order. Defaults to 0.</td>
+    </tr>
+    <tr>
       <td><code>total_taxes</code></td>
       <td>Optional. The taxes on the entire order. Defaults to 0.</td>
     </tr>
