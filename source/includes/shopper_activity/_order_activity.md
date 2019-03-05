@@ -2,15 +2,11 @@
 
 Order Activity will show up on a person's activity timeline as an event. The event is based on the <code>action</code> sent with the order payload. For example, sending <code>placed</code> will result in a "Placed an order" event and sending <code>updated</code> will result in an "Updated an order" event.
 
-Drip will keep a person’s Lifetime Value (LTV) up-to-date with their orders. For example, if a customer places an order with a `grand_total` of $100, their LTV will be incremented by $100. If the order is then updated, paid, or fulfilled with a `grand_total` value of $105, the customer’s LTV will increase by $5.
-
-To adjust a person’s lifetime value for a refund or cancelation, set `refund_amount` to the amount of the refund and leave `grand_total` unchanged.
+Drip will keep a person’s Lifetime Value (LTV) up-to-date with their orders. For example, if a customer places an order with a <code>grand_total</code> of $100, their LTV will be incremented by $100. If the order is then updated, paid, or fulfilled with a <code>grand_total</code> value of $105, the customer’s LTV will increase by $5. If the order is then canceled or refunded with a <code>refund_amount</code> of $105, the customer’s LTV will decrease by $105.
 
 ## Create or update an order
 
-When an order is created, the person’s `lifetime_value` property will be automatically incremented by the total amount of the order.
-
-To update an existing order, include the `provider` and `order_id` for that order in the payload.
+To update an existing order, include the <code>provider</code> and <code>order_id</code> for that order in the payload.
 
 > To record an order event:
 
@@ -58,7 +54,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
       }
     ],
     "billing_address": {
-      "name": "Primary Billing",
+      "label": "Primary Billing",
       "first_name": "Bill",
       "last_name": "Billington",
       "company": "Bills R US",
@@ -71,7 +67,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
       "phone": "555-555-5555"
     },
     "shipping_address": {
-      "name": "Downtown Office",
+      "label": "Downtown Office",
       "first_name": "Ship",
       "last_name": "Shipington",
       "company": "Shipping 4 Less",
@@ -158,7 +154,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>refund_amount</code></td>
-      <td>Optional. The refund amount on the order. Include the unchanged <code>grand_total</code> and the <code>refund_amount</code> will be deducted from the person's Lifetime Value (LTV) in Drip. Defaults to 0.</td>
+      <td>Optional. To adjust a person’s lifetime value for a refund or cancelation, set <code>refund_amount</code> to the amount of the refund and leave <code>grand_total</code> unchanged. Defaults to 0.</td>
     </tr>
     <tr>
       <td><code>currency</code></td>
