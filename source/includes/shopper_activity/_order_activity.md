@@ -158,7 +158,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>refund_amount</code></td>
-      <td>Optional. The refunded amount on the order. Include the unchanged <code>grand_total</code> and the <code>refund_amount</code> will be deducted from the person's Lifetime Value (LTV) in Drip. Defaults to 0.</td>
+      <td>Optional. The refund amount on the order. Include the unchanged <code>grand_total</code> and the <code>refund_amount</code> will be deducted from the person's Lifetime Value (LTV) in Drip. Defaults to 0.</td>
     </tr>
     <tr>
       <td><code>currency</code></td>
