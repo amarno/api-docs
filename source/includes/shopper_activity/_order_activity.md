@@ -2,7 +2,9 @@
 
 Order Activity will show up on a person's activity timeline as an event. The event is based on the <code>action</code> sent with the order payload. For example, sending <code>placed</code> will result in a "Placed an order" event and sending <code>updated</code> will result in an "Updated an order" event.
 
-Drip will keep a person’s Lifetime Value (LTV) up-to-date with their orders. For example, if a customer places an order with a `grand_total` of $100, their LTV will be incremented by $100. If the order is then updated, paid, or fulfilled with a `grand_total` value of $105, the customer’s LTV will increase by $5. If the order is then canceled or refunded with the same $105 `grand_total` value, the customer’s LTV will decrease by $105.
+Drip will keep a person’s Lifetime Value (LTV) up-to-date with their orders. For example, if a customer places an order with a `grand_total` of $100, their LTV will be incremented by $100. If the order is then updated, paid, or fulfilled with a `grand_total` value of $105, the customer’s LTV will increase by $5.
+
+To adjust a person’s lifetime value for a refund or cancelation, set `refund_amount` to the amount of the refund and leave `grand_total` unchanged.
 
 ## Create or update an order
 
@@ -156,7 +158,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
     </tr>
     <tr>
       <td><code>refund_amount</code></td>
-      <td>Optional. If the `action` is defined as `refunded` or `canceled` this value will be deducted from a person’s Lifetime Value (LTV) in Drip. Defaults to 0.</td>
+      <td>Optional. The refunded amount on the order. Include the unchanged <code>grand_total</code> and the <code>refund_amount</code> will be deducted from the person's Lifetime Value (LTV) in Drip. Defaults to 0.</td>
     </tr>
     <tr>
       <td><code>currency</code></td>
