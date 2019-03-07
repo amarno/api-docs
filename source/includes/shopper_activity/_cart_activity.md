@@ -169,11 +169,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
             </tr>
             <tr>
               <td><code>product_url</code></td>
-              <td>Required. A URL to the site containing product details.</td>
+              <td>Optional. A URL to the site containing product details.</td>
             </tr>
             <tr>
               <td><code>image_url</code></td>
-              <td>Required. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
+              <td>Optional. A direct URL to an image of the  product. We recommend using an image type that is supported by modern email clients (e.g. JPEG, GIF, PNG). For best display results, image size should be consistent across all products.</td>
             </tr>
           </tbody>
         </table>
@@ -184,4 +184,4 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
 
 The API will also allow custom attributes to be passed in. These will be exposed within Drip just like [event properties](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties).
 
-For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to event (top level object) or items. Custom attribute values must be strings.
+For example, if your platform includes the concept of product tags, you can include a product_tag attribute in the JSON that can be used in a Drip automation or email [via Liquid](https://help.drip.com/hc/en-us/articles/115003737312-Event-Properties#access-properties). You can attach custom attributes either to events or their items.

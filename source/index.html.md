@@ -47,6 +47,7 @@ includes_cdc:
 includes_shopper_activity:
   - shopper_activity/overview
   - shopper_activity/cart_activity
+  - shopper_activity/order_activity
 
 search: true
 ---

@@ -330,7 +330,7 @@ request and the time your data appears in the user interface.
   </tbody>
 </table>
 
-## Create or update a batch of orders
+## Create or update a batch of orders (Legacy)
 
 > To create or update a batch of orders:
 
@@ -490,6 +490,13 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/orders/batches" \
 ```json
 {}
 ```
+<aside class="notice color-notice">
+We’ve released a new and improved endpoint for Orders functionality! This new endpoint will allow you to trigger automations and segment people based on the items contained in their orders. Check it out <a href="#order-activity">here</a>.
+
+<br>
+<br>
+Note that the legacy Orders endpoint will continue to function. We will give fair notice before we retire it in the future.
+</aside>
 
 We recommend using this API endpoint when you need to create a collection of orders and subscribers at once that will likely exceed the regular rate limit of 3,600 requests per hour.
 
