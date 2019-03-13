@@ -491,7 +491,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/orders/batches" \
 {}
 ```
 <aside class="notice color-notice">
-We’ve released a new and improved batch endpoint for Orders functionality! Check it out <a href="#create-or-update-a-batch-of-orders-shopper-activity">here</a>.
+We’ve released a new and improved batch endpoint for Orders functionality! Check it out <a href="#create-or-update-a-batch-of-orders">here</a>.
 
 <br>
 <br>
