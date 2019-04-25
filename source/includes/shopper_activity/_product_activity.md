@@ -62,7 +62,7 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/produc
     </tr>
     <tr>
       <td><code>action</code></td>
-      <td>Required. The event's action. For Product Activity, this can be either <code>created</code> or <code>updated</code>.
+      <td>Required. The event's action. For Product Activity, this can be either <code>created</code>, <code>updated</code> or <code>deleted</code>.
     </tr>
     <tr>
       <td><code>occurred_at</code></td>
