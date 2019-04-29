@@ -219,11 +219,11 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/order"
             </tr>
             <tr>
               <td><code>fees</code></td>
-              <td>Optional. The shipping cost on the items, taking quantity into account. For example, a $0.25 fee per item would be $0.50 if that item was of quantity 2. Defaults to 0.</td>
+              <td>Optional. Any additional fees on the items, taking quantity into account. For example, a $0.25 fee per item would be $0.50 if that item was of quantity 2. Defaults to 0.</td>
             </tr>
             <tr>
               <td><code>shipping</code></td>
-              <td>Optional. Any additional fees on the items, taking quantity into account. For example, $2.50 fee per item would be $5.00 if that item was of quantity 2. Defaults to 0.</td>
+              <td>Optional. The shipping cost on the items, taking quantity into account. For example, $2.50 fee per item would be $5.00 if that item was of quantity 2. Defaults to 0.</td>
             </tr>
             <tr>
               <td><code>total</code></td>
