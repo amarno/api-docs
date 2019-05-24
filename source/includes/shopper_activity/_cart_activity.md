@@ -48,6 +48,53 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/cart" 
   EOF
 ```
 
+```ruby
+require 'drip'
+
+client = Drip::Client.new do |c|
+  c.api_key = "YOUR API KEY"
+  c.account_id = "YOUR_ACCOUNT_ID"
+end
+
+response = client.create_cart_activity_event(
+  provider: "my_custom_platform",
+  email: "user@gmail.com", # or person_id
+  action: "created",
+  cart_id: "456445746",
+  occurred_at: "2019-01-17T20:50:00Z",
+  cart_public_id: "#5",
+  grand_total: 16.99,
+  total_discounts: 5.34,
+  currency: "USD",
+  cart_url: "https://mysuperstore.example.com/cart/456445746",
+  items: [
+    {
+      product_id: "B01J4SWO1G",
+      product_variant_id: "B01J4SWO1G-CW-BOTT",
+      sku: "XHB-1234",
+      name: "The Coolest Water Bottle",
+      brand: "Drip",
+      categories: [
+        "Accessories"
+      ],
+      price: 11.16,
+      quantity: 2,
+      discount: 5.34,
+      total: 16.99,
+      product_url: "https://mysuperstore.com/dp/B01J4SWO1G",
+      image_url: "https://www.getdrip.com/images/example_products/water_bottle.png",
+      product_tag: "Best Seller"
+    }
+  ]
+)
+
+if response.success?
+  puts "Request accepted"
+else
+  puts "Error occurred"
+end
+```
+
 > Responds with a <code>202 Accepted</code> if successful. That means the server accepted the request and queued it for processing. The response includes a unique request_id that can be used to check the status of the request later on:
 
 ```json
