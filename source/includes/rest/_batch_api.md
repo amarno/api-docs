@@ -716,7 +716,57 @@ curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/produc
   -d @- << EOF
   {
     "products": [
-
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT",
+        "sku": "XHB-1234",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      },
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G2",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT2",
+        "sku": "XHB-1235",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G2",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      },
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G3",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT3",
+        "sku": "XHB-1236",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G3",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      }
     ]
   }
   EOF
