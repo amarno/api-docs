@@ -848,3 +848,109 @@ request and the time your data appears in the user interface.
     </tr>
   </tbody>
 </table>
+
+## Create or update a batch of products
+
+> To create or update a batch of products:
+
+```shell
+curl -X POST "https://api.getdrip.com/v3/YOUR_ACCOUNT_ID/shopper_activity/product/batch" \
+  -H "Content-Type: application/json" \
+  -H 'User-Agent: Your App Name (www.yourapp.com)' \
+  -u YOUR_API_KEY: \
+  -d @- << EOF
+  {
+    "products": [
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT",
+        "sku": "XHB-1234",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      },
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G2",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT2",
+        "sku": "XHB-1235",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G2",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      },
+      {
+        "provider": "my_custom_platform",
+        "action": "created",
+        "occurred_at": "2019-01-28T12:15:23Z",
+        "product_id": "B01J4SWO1G3",
+        "product_variant_id": "B01J4SWO1G-CW-BOTT3",
+        "sku": "XHB-1236",
+        "name": "The Coolest Water Bottle",
+        "brand": "Drip",
+        "categories": [
+          "Accessories"
+        ],
+        "price": 11.16,
+        "inventory": 42,
+        "product_url": "https://mysuperstore.com/dp/B01J4SWO1G3",
+        "image_url": "https://www.getdrip.com/images/example_products/water_bottle.png"
+      }
+    ]
+  }
+  EOF
+```
+
+> Responds with a <code>202 Accepted</code> if successful. That means the server accepted the request and queued it for processing. The response includes a list of unique request_ids that can be used to check the status of the request later on:
+
+```json
+{
+  "request_ids": [
+    "db8a7b16-32dd-4863-8b6e-818e3eaab99a",
+    "002048e9-3692-4f0a-8bbf-80a077acf642"
+  ]
+}
+```
+</aside>
+
+We recommend using this API endpoint when you need to import a collection of products that will likely exceed the regular rate limit of 3,600 requests per hour.
+
+Note: Since our batch APIs process requests in the background, there may be a delay between the time you submit your
+request and the time your data appears in the user interface.
+
+### HTTP Endpoint
+
+`POST /v3/:account_id/shopper_activity/product/batch`
+
+### Arguments
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>products</code></td>
+      <td>Required. An Array with between 1 and 1000 products containing <a href="#product-activity">product activity</a>.</td>
+    </tr>
+  </tbody>
+</table>
