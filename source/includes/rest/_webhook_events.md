@@ -29,7 +29,7 @@ In addition, you will be notified and your webhook will be temporarily disabled 
   "status": "active",
   "email": "john@acme.com",
   "custom_fields": {
-    "name": "John Doe"
+    "shirt_size": "Medium"
   },
   "tags": ["Customer", "SEO"],
   "time_zone": "America/Los_Angeles",
