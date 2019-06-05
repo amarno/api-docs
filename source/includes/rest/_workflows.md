@@ -326,7 +326,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/workflows/WORKFLOW_ID/s
       "email": "john@acme.com",
       "time_zone": "America/Los_Angeles",
       "custom_fields": {
-        "name": "John Doe"
+        "shirt_size": "Medium"
       }
     }]
   }
@@ -346,7 +346,7 @@ options = {
   email: "john@acme.com",
   time_zone: "America/Los_Angeles",
   custom_fields: {
-    name: "John Doe"
+    shirt_size: "Medium"
   }
 }
 response = client.start_subscriber_workflow(workflow_id, options)
@@ -365,7 +365,7 @@ const payload = {
   email: "john@acme.com",
   time_zone: "America/Los_Angeles",
   custom_fields: {
-    name: "John Doe"
+    shirt_size: "Medium"
   }
 }
 
@@ -413,6 +413,42 @@ If the workflow is not active, the subscriber will not be added to the workflow.
       <td>Optional. The subscriber's Drip <code>id</code>. Either <code>email</code> or <code>id</code> must be included.</td>
     </tr>
     <tr>
+      <td><code>first_name</code></td>
+      <td>Optional. The subscriber's first name.</td>
+    </tr>
+    <tr>
+      <td><code>last_name</code></td>
+      <td>Optional. The subscriber's last name.</td>
+    </tr>
+    <tr>
+      <td><code>address1</code></td>
+      <td>Optional. The subscriber's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>address2</code></td>
+      <td>Optional. An additional field for the subscribers's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td>Optional. The city, town, or village in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>state</code></td>
+      <td>Optional. The region in which the subscriber resides. Typically a province, a state, or a prefecture.</td>
+    </tr>
+    <tr>
+      <td><code>zip</code></td>
+      <td>Optional. The postal code in which the subscriber resides, also known as zip, postcode, Eircode, etc.</td>
+    </tr>
+    <tr>
+      <td><code>country</code></td>
+      <td>Optional. The country in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>phone</code></td>
+      <td>Optional. The subscriber's primary phone number.</td>
+    </tr>
+    <tr>
       <td><code>user_id</code></td>
       <td>Optional. A unique identifier for the user in your database, such as a primary key.</td>
     </tr>
@@ -422,7 +458,7 @@ If the workflow is not active, the subscriber will not be added to the workflow.
     </tr>
     <tr>
       <td><code>custom_fields</code></td>
-      <td>Optional. An Object containing custom field data. E.g. <code>{ "name": "John Doe" }</code>.</td>
+      <td>Optional. An Object containing custom field data. E.g. <code>{ "shirt_size": "Medium" }</code>.</td>
     </tr>
     <tr>
       <td><code>tags</code></td>

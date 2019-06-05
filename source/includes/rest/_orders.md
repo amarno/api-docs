@@ -23,7 +23,7 @@ Note that the legacy Orders endpoint will continue to function. We will give fai
   "permalink": "http://myorders.com/orders/123456",
   "currency_code": "USD",
   "properties": {
-    "size": "medium",
+    "shirt_size": "Medium",
     "color": "red"
   },
   "occurred_at": 2013-06-21T10:31:58Z,
@@ -392,7 +392,7 @@ order = {
   permalink: "http://myorders.com/orders/123456",
   currency_code: "USD",
   properties: {
-    size: "medium",
+    shirt_size: "Medium",
     color: "red"
   },
   occurred_at: "2013-06-21T10:31:58Z",
@@ -474,7 +474,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/orders" \
       "permalink": "http://myorders.com/orders/123456",
       "currency_code": "USD",
       "properties": {
-        "size": "medium",
+        "shirt_size": "Medium",
         "color": "red"
       },
       "occurred_at": "2013-06-21T10:31:58Z",

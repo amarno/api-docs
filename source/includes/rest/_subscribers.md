@@ -7,12 +7,21 @@
   "id": "z1togz2hcjrkpp5treip",
   "status": "active",
   "email": "john@acme.com",
+  "first_name": "John",
+  "last_name": "Doe",
+  "address1": "123 Main St.",
+  "address2": "Suite 200",
+  "city": "Los Angeles",
+  "state": "CA",
+  "zip": "90210",
+  "country": "US",
+  "phone": "555-555-5555",
   "eu_consent": "granted",
   "time_zone": "America/Los_Angeles",
   "utc_offset": -440,
   "visitor_uuid": "sa8f7sdf78sdsdahf788d7asf8sd",
   "custom_fields": {
-    "name": "John Doe"
+    "shirt_size": "Medium"
   },
   "tags": ["Customer", "SEO"],
   "ip_address": "111.111.111.11",
@@ -68,6 +77,42 @@ On January 7, 2019 we renamed Subscribers to People to better represent who youâ
       <td>The subscriber's email address.</td>
     </tr>
     <tr>
+      <td><code>first_name</code></td>
+      <td>The subscriber's first name.</td>
+    </tr>
+    <tr>
+      <td><code>last_name</code></td>
+      <td>The subscriber's last name.</td>
+    </tr>
+    <tr>
+      <td><code>address1</code></td>
+      <td>The subscriber's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>address2</code></td>
+      <td>An additional field for the subscribers's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td>The city, town, or village in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>state</code></td>
+      <td>The region in which the subscriber resides. Typically a province, a state, or a prefecture.</td>
+    </tr>
+    <tr>
+      <td><code>zip</code></td>
+      <td>The postal code in which the subscriber resides, also known as zip, postcode, Eircode, etc.</td>
+    </tr>
+    <tr>
+      <td><code>country</code></td>
+      <td>The country in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>phone</code></td>
+      <td>The subscriber's primary phone number.</td>
+    </tr>
+    <tr>
       <td><code>eu_consent</code></td>
       <td>A string describing whether the subscriber GDPR consent is <code>granted</code>, <code>denied</code>, or <code>unknown</code>.</td>
     </tr>
@@ -85,7 +130,7 @@ On January 7, 2019 we renamed Subscribers to People to better represent who youâ
     </tr>
     <tr>
       <td><code>custom_fields</code></td>
-      <td>An Object containing custom field data. E.g. <code>{ "name": "John Doe" }</code>.</td>
+      <td>An Object containing custom field data. E.g. <code>{ "shirt_size": "Medium" }</code>.</td>
     </tr>
     <tr>
       <td><code>tags</code></td>
@@ -158,7 +203,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/subscribers" \
     "email": "john@acme.com",
     "time_zone": "America/Los_Angeles",
     "custom_fields": {
-      "name": "John Doe"
+      "shirt_size": "Medium"
     }
   }]
 }
@@ -177,7 +222,7 @@ subscriber_email = "john@acme.com"
 options = {
   time_zone: "America/Los_Angeles",
   custom_fields: {
-    name: "John Doe"
+    shirt_size: "Medium"
   }
 }
 
@@ -197,7 +242,7 @@ const payload = {
     email: "john@acme.com",
     time_zone: "America/Los_Angeles",
     custom_fields: {
-      name: "John Doe"
+      shirt_size: "Medium"
     }
   }]
 };
@@ -254,6 +299,42 @@ If you need to create or update a collection of subscribers at once, use our [ba
       <td>Optional. A new email address for the subscriber. If provided and a subscriber with the <code>email</code> above does not exist, this address will be used to create a new subscriber.</td>
     </tr>
     <tr>
+      <td><code>first_name</code></td>
+      <td>Optional. The subscriber's first name.</td>
+    </tr>
+    <tr>
+      <td><code>last_name</code></td>
+      <td>Optional. The subscriber's last name.</td>
+    </tr>
+    <tr>
+      <td><code>address1</code></td>
+      <td>Optional. The subscriber's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>address2</code></td>
+      <td>Optional. An additional field for the subscribers's mailing address.</td>
+    </tr>
+    <tr>
+      <td><code>city</code></td>
+      <td>Optional. The city, town, or village in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>state</code></td>
+      <td>Optional. The region in which the subscriber resides. Typically a province, a state, or a prefecture.</td>
+    </tr>
+    <tr>
+      <td><code>zip</code></td>
+      <td>Optional. The postal code in which the subscriber resides, also known as zip, postcode, Eircode, etc.</td>
+    </tr>
+    <tr>
+      <td><code>country</code></td>
+      <td>Optional. The country in which the subscriber resides.</td>
+    </tr>
+    <tr>
+      <td><code>phone</code></td>
+      <td>Optional. The subscriber's primary phone number.</td>
+    </tr>
+    <tr>
       <td><code>user_id</code></td>
       <td>Optional. A unique identifier for the user in your database, such as a primary key.</td>
     </tr>
@@ -271,7 +352,7 @@ If you need to create or update a collection of subscribers at once, use our [ba
     </tr>
     <tr>
       <td><code>custom_fields</code></td>
-      <td>Optional. An Object containing custom field data. E.g. <code>{ "name": "John Doe" }</code>.</td>
+      <td>Optional. An Object containing custom field data. E.g. <code>{ "shirt_size": "Medium" }</code>.</td>
     </tr>
     <tr>
       <td><code>tags</code></td>

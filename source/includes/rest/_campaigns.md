@@ -521,7 +521,7 @@ curl -X POST "https://api.getdrip.com/v2/YOUR_ACCOUNT_ID/campaigns/CAMPAIGN_ID/s
       "starting_email_index": 0,
       "reactivate_if_removed": true,
       "custom_fields": {
-        "name": "John Doe"
+        "shirt_size": "Medium"
       }
     }]
   }
@@ -622,7 +622,7 @@ client.subscribeToCampaign(campaignId, payload)
     </tr>
     <tr>
       <td><code>custom_fields</code></td>
-      <td>Optional. An Object containing custom field data. E.g. <code>{ "name": "John Doe" }</code>.</td>
+      <td>Optional. An Object containing custom field data. E.g. <code>{ "shirt_size": "Medium" }</code>.</td>
     </tr>
     <tr>
       <td><code>tags</code></td>
