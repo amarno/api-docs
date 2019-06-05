@@ -422,23 +422,23 @@ If the workflow is not active, the subscriber will not be added to the workflow.
     </tr>
     <tr>
       <td><code>address1</code></td>
-      <td>Optional. The first line of the subscriber's address.</td>
+      <td>Optional. The subscriber's mailing address.</td>
     </tr>
     <tr>
       <td><code>address2</code></td>
-      <td>Optional. The second line of the subscriber's address.</td>
+      <td>Optional. An additional field for the subscribers's mailing address.</td>
     </tr>
     <tr>
       <td><code>city</code></td>
-      <td>Optional. The city in which the subscriber resides.</td>
+      <td>Optional. The city, town, or village in which the subscriber resides.</td>
     </tr>
     <tr>
       <td><code>state</code></td>
-      <td>Optional. The state in which the subscriber resides.</td>
+      <td>Optional. The region in which the subscriber resides. Typically a province, a state, or a prefecture.</td>
     </tr>
     <tr>
       <td><code>zip</code></td>
-      <td>Optional. The zip code in which the subscriber resides.</td>
+      <td>Optional. The postal code in which the subscriber resides, also known as zip, postcode, Eircode, etc.</td>
     </tr>
     <tr>
       <td><code>country</code></td>
