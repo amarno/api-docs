@@ -90,7 +90,7 @@ On January 7, 2019 we renamed Subscribers to People to better represent who youâ
     </tr>
     <tr>
       <td><code>address2</code></td>
-      <td>An additional field for the subscribers's mailing address.</td>
+      <td>An additional field for the subscriber's mailing address.</td>
     </tr>
     <tr>
       <td><code>city</code></td>
@@ -312,7 +312,7 @@ If you need to create or update a collection of subscribers at once, use our [ba
     </tr>
     <tr>
       <td><code>address2</code></td>
-      <td>Optional. An additional field for the subscribers's mailing address.</td>
+      <td>Optional. An additional field for the subscriber's mailing address.</td>
     </tr>
     <tr>
       <td><code>city</code></td>

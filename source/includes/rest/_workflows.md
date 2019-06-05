@@ -426,7 +426,7 @@ If the workflow is not active, the subscriber will not be added to the workflow.
     </tr>
     <tr>
       <td><code>address2</code></td>
-      <td>Optional. An additional field for the subscribers's mailing address.</td>
+      <td>Optional. An additional field for the subscriber's mailing address.</td>
     </tr>
     <tr>
       <td><code>city</code></td>
