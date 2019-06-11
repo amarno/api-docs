@@ -55,7 +55,7 @@ search: true
 
 # Introduction
 
-Welcome to the Drip API! The REST API communicates exclusively in JSON over SSL (HTTPS).
+Welcome to the Drip API! The API communicates exclusively in JSON over SSL (HTTPS).
 All endpoint URLs begin with `https://api.getdrip.com/`. Additionally, the REST API requires the use of a client which supports [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication).
 
 Parameters must be serialized in JSON and passed in the request body (not in the query string or form parameters). You should use the media type designation of `application/json`.
